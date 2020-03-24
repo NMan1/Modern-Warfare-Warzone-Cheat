@@ -1,6 +1,9 @@
 # Modern-Warfare-Warzone-Cheat
 #### A shit cheat for modern warfare (the warzone) game mode. Threw it together in a day and put 0 effort into it so expect shit code. Nonetheless it works
 
+### Creaing a thread in the dll is not safe
+ - Remove that and add the code relying on that thread (the key loop) into one of the hooked functions
+
  <img src="https://i.imgur.com/mGR2X3D.png"/>  
 
 - Top right a small gay menu
