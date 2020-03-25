@@ -16,5 +16,5 @@
   - 3 toggles snaplines
   
 When the enemy gets closer than 100m their color turns to orange
- 
+Dll needs to be natively injected (no manual map thred hijack etc, if u want security then fix that)
 credits: https://github.com/Sh0ckFR/Universal-Dear-ImGui-Hook for d3d12 imgui hook
