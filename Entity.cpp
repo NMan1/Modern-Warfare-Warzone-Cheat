@@ -73,8 +73,8 @@ namespace decrypt
 {
 	namespace _0x318
 	{
-		constexpr DWORD ENCRYPT_PTR_OFFSET = 0x106A10C8;
-		constexpr DWORD REVERSED_ADDRESS = 0x3741258;
+		constexpr DWORD ENCRYPT_PTR_OFFSET = 0x10764858;
+		constexpr DWORD REVERSED_ADDRESS = 0x37F8275;
 	}
 }
 
@@ -428,16 +428,17 @@ public:
 	DWORD m_TeamId; //this+0xC
 	char pad_0x10[0x7E0];
 	QWORD m_PosInfoPtr; //this+0x7F0
-};//size == 0x3580
+};//size == 0x3588
 
 namespace decrypt
 {
-	namespace _0x3580
+	namespace _0x3588
 	{
-		DWORD ENCRYPT_PTR_OFFSET = 0x106A23F8;
-		DWORD REVERSED_ADDRESS = 0x37412B8;
-		DWORD BASE_OFFSET = 0x96E18;
-		DWORD LOCAL_INDEX_OFFSET = 0x1DE58;
+		DWORD ENCRYPT_PTR_OFFSET = 0x10765B88;
+		DWORD REVERSED_ADDRESS = 0x37F82CA;
+		DWORD BASE_OFFSET = 0x970B8;
+		DWORD CAMERA_INFO_OFFSET = 0x2128;
+		DWORD LOCAL_INDEX_OFFSET = 0x700A0;
 	}
 }
 
@@ -450,12 +451,12 @@ QWORD* decrypt_key_for_clientinfo_t()
 	if (Empty)
 	{
 		QWORD reversedAddr, LastKey;
-		reversedAddr = *(QWORD*)(Globals::pGameBase + decrypt::_0x3580::REVERSED_ADDRESS);
-		LastKey = *(QWORD*)(_byteswap_uint64(reversedAddr) + 0x17);
-		key[0] = 0x33A8BCA726B7B983;
-		key[1] = 0x50A92D8645F99BB;
+		reversedAddr = *(QWORD*)(Globals::pGameBase + decrypt::_0x3588::REVERSED_ADDRESS);
+		LastKey = *(QWORD*)(_byteswap_uint64(reversedAddr) + 0x1B);
+		key[0] = 0x306AE931CF3763CB;
+		key[1] = 0x223ED5787CCC790D;
 		key[2] = LastKey;
-		key[3] = 0xA22A4F24EDD27A89;
+		key[3] = 0x3C1F8A7A912886FF;
 		Empty = false;
 	}
 
@@ -464,7 +465,7 @@ QWORD* decrypt_key_for_clientinfo_t()
 
 QWORD decrypt_clientinfo_t()
 {
-	QWORD encryptedPtr = *(QWORD*)(Globals::pGameBase + decrypt::_0x3580::ENCRYPT_PTR_OFFSET);
+	QWORD encryptedPtr = *(QWORD*)(Globals::pGameBase + decrypt::_0x3588::ENCRYPT_PTR_OFFSET);
 
 	if (encryptedPtr)
 	{
@@ -480,11 +481,11 @@ clientinfo_t* GetClientInfo(unsigned long i)
 
 	if (decryptedPtr)
 	{
-		QWORD BaseAddress = *(QWORD*)(decryptedPtr + decrypt::_0x3580::BASE_OFFSET);
+		QWORD BaseAddress = *(QWORD*)(decryptedPtr + decrypt::_0x3588::BASE_OFFSET);
 
 		if (BaseAddress)
 		{
-			return (clientinfo_t*)(BaseAddress + (i * 0x3580));
+			return (clientinfo_t*)(BaseAddress + (i * 0x3588));
 		}
 	}
 
@@ -503,7 +504,7 @@ unsigned long Entity::GetLocalIndex()
 
 	if (decryptedPtr)
 	{
-		QWORD BaseAddress = *(QWORD*)(decryptedPtr + decrypt::_0x3580::LOCAL_INDEX_OFFSET);
+		QWORD BaseAddress = *(QWORD*)(decryptedPtr + decrypt::_0x3588::LOCAL_INDEX_OFFSET);
 
 		if (BaseAddress)
 		{
@@ -521,7 +522,7 @@ struct name_t
 
 namespace decrypt
 {
-	constexpr DWORD NAME_ARRAY_OFFSET = 0x106AF908;
+	constexpr DWORD NAME_ARRAY_OFFSET = 0x107730E8;
 	constexpr DWORD NAME_LIST_OFFSET = 0x4C70;
 }
 

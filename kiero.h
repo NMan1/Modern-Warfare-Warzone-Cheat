@@ -68,7 +68,7 @@ namespace kiero
 	Status::Enum init(RenderType::Enum renderType);
 	void shutdown();
 
-	Status::Enum bind(uint16_t index, void** original, void* function);
+	Status::Enum bind(uint16_t index, void** original, extern void* function);
 	void unbind(uint16_t index);
 
 	RenderType::Enum getRenderType();
