@@ -1,6 +1,8 @@
 # Modern-Warfare-Warzone-Cheat
 #### A shit cheat for modern warfare (the warzone) game mode. Threw it together in a day and put 0 effort into it so expect shit code. Nonetheless it works
 
+**THIS IS NOT UPDATED NOR WILL I UPDATE IT FOR YOU**
+
 ### Creaing a thread in the dll is not safe
  - Remove that and add the code relying on that thread (the key loop) into one of the hooked functions
 
