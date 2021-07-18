@@ -8,7 +8,7 @@
 
  <img src="https://i.imgur.com/mGR2X3D.png"/>  
 
-- Top right a small gay menu
+- Top right a small terrible  menu
 - Top left a terrible watermark
 
 ## Keybinds (numpad)
