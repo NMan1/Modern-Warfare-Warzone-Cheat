@@ -1,3 +1,6 @@
+UPDATED version : https://github.com/NMan1/warzone-internal
+
+
 # Modern-Warfare-Warzone-Cheat
 #### A cheat for modern warfare (the warzone) game mode. Threw it together in a day and put 0 effort into it so expect shit code. Nonetheless it works
 
