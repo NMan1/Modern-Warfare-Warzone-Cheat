@@ -2,7 +2,6 @@ UPDATED version : https://github.com/NMan1/warzone-internal
 
 
 # Modern-Warfare-Warzone-Cheat
-#### A cheat for modern warfare (the warzone) game mode. Threw it together in a day and put 0 effort into it so expect shit code. Nonetheless it works
 
 **THIS IS NOT UPDATED NOR WILL I UPDATE IT FOR YOU**
 
@@ -11,8 +10,8 @@ UPDATED version : https://github.com/NMan1/warzone-internal
 
  <img src="https://i.imgur.com/mGR2X3D.png"/>  
 
-- Top right a small terrible  menu
-- Top left a terrible watermark
+- Top right a small  menu
+- Top left a watermark
 
 ## Keybinds (numpad)
   - 0 brings up debug console
